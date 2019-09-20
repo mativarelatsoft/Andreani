@@ -12,7 +12,7 @@ pipeline {
 				sh 'npm run build'
 			}
 		}
-		stage('Deploy to http://192.168.200.238:8098/') {
+		stage('Deploy to http://10.10.20.195:8098/') {
 			agent any;
 			steps {
 				echo 'Deployando web...'
